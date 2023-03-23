@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" href="Icono.ico" >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos.css">
+    <title>JGR.music</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Logo Animado.gif" alt="">
+            <h2 class="JGR.music">JGR.music</h2>
+        </div>
+        <nav>
+            <a href="Index.html" class="nav-link">Home</a>
+            <a href="Conocenos.html" class="nav-link">Conocenos</a>
+            <a href="" class="nav-link">Componentes</a>
+            <a href="" class="nav-link">Instrumentos</a>
+        </nav> 
+</header>
+    <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="Epiphone Lespaul.jpg" alt=""></div>
+                        <p class="descripcion">Guitarra Epiphone Les Paul Negra</p>
+                        <span class="precio">$13.699.00</span>   
+                </div>
+                <div class="item"onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="Ibañez.jpg" alt=""></div>
+                        <p class="descripcion">Guitarra electro-Acústica Ibañez GA5TCE-AM Natural</p>
+                        <span class="precio">$6.799.00</span>
+                </div>
+                <div class="item"onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="Yamaha.jpg" alt=""></div>
+                        <p class="descripcion">Guitarra Yamaha C40</p>
+                        <span class="precio">$3.790.50</span>
+                </div>
+                <div class="item"onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="Taylor.jpg" alt=""></div>
+                        <p class="descripcion">Guitarra Premium Taylor Electro Acustica 418E</p>
+                        <span class="precio">$51.499.93</span>
+                </div>
+                <div class="item"onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="Yamaha Apx600.jpg" alt=""></div>
+                        <p class="descripcion">Guitarra Electro Acustica Yamaha APX600 Negra</p>
+                        <span class="precio">$7.032.00</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenedor del item seleccionado -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="Epiphone Lespaul.jpg" alt="" id="img">
+                <h2 id="modelo">Epiphone</h2>
+                <p id="descripcion">Descripción de la Guitarra</p>
+
+                <span class="precio" id="precio">$ 13.699.00</span>
+
+                <div class="fila">
+                    <div class="size">
+                        <label for="">Color</label>
+                        <select name="" id="">
+                            <option value="">Black</option>
+                            <option value="">Red</option>
+                            <option value="">White</option>
+                        </select>
+                    </div>
+                    <button>AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script src="Scrip.js"></script>
+</body>
+
+</html>
